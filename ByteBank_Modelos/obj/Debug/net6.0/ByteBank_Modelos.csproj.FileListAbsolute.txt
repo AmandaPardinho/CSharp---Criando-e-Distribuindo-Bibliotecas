@@ -1,0 +1,12 @@
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\ByteBank_Modelos.csproj.AssemblyReference.cache
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\ByteBank_Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\ByteBank_Modelos.AssemblyInfoInputs.cache
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\ByteBank_Modelos.AssemblyInfo.cs
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\ByteBank_Modelos.csproj.CoreCompileInputs.cache
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\bin\Debug\net6.0\ByteBank_Modelos.deps.json
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\bin\Debug\net6.0\ByteBank_Modelos.dll
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\bin\Debug\net6.0\ByteBank_Modelos.pdb
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\ByteBank_Modelos.dll
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\refint\ByteBank_Modelos.dll
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\ByteBank_Modelos.pdb
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBank_Modelos\obj\Debug\net6.0\ref\ByteBank_Modelos.dll

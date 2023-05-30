@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ByteBank_Modelos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ByteBank_Modelos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ByteBank_Modelos.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ByteBank_Modelos/1.0.0": {
+      "type": "project",
+      "path": "../ByteBank_Modelos/ByteBank_Modelos.csproj",
+      "msbuildProject": "../ByteBank_Modelos/ByteBank_Modelos.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ByteBank_Modelos >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\AmandaMarquesPardinh\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\AmandaMarquesPardinh\\Desktop\\Performa\\repositorios\\CSharp---Criando-e-Distribuindo-Bibliotecas\\ByteBank_Modelos\\ByteBank_Modelos.csproj": {
+              "projectPath": "C:\\Users\\AmandaMarquesPardinh\\Desktop\\Performa\\repositorios\\CSharp---Criando-e-Distribuindo-Bibliotecas\\ByteBank_Modelos\\ByteBank_Modelos.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

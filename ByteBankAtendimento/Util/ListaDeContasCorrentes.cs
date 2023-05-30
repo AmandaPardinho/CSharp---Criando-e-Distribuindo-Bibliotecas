@@ -1,4 +1,4 @@
-﻿using bytebank.Modelos.Conta;
+﻿using ByteBankAtendimento.Modelos.Conta;
 using System;
 using System.Collections.Generic;
 using System.Linq;

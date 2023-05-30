@@ -22,20 +22,21 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             try
             {
                 char opcao = '0';
-                while (opcao != '7')
+                while (opcao != '8')
                 {
                     Console.Clear();
                     Console.WriteLine("===============================");
                     Console.WriteLine("===       Atendimento       ===");
-                    Console.WriteLine("===============================");
-                    Console.WriteLine("===   1 - Cadastrar Conta   ===");
-                    Console.WriteLine("===   2 - Listar Contas     ===");
-                    Console.WriteLine("===   3 - Remover Conta     ===");
-                    Console.WriteLine("===   4 - Ordenar Contas    ===");
-                    Console.WriteLine("===   5 - Pesquisar Conta   ===");
-                    Console.WriteLine("===   6 - Exportar Contas   ===");
-                    Console.WriteLine("===   7 - Sair do Sistema   ===");
-                    Console.WriteLine("===============================");
+                    Console.WriteLine("================================");
+                    Console.WriteLine("===   1 - Cadastrar Conta    ===");
+                    Console.WriteLine("===   2 - Listar Contas      ===");
+                    Console.WriteLine("===   3 - Remover Conta      ===");
+                    Console.WriteLine("===   4 - Ordenar Contas     ===");
+                    Console.WriteLine("===   5 - Pesquisar Conta    ===");
+                    Console.WriteLine("=== 6 - Exportar Contas JSON ===");
+                    Console.WriteLine("=== 7 - Exportar Contas XML  ===");
+                    Console.WriteLine("===   8 - Sair do Sistema    ===");
+                    Console.WriteLine("================================");
                     Console.WriteLine("\n\n");
                     Console.Write("Digite a opção desejada: ");
                     try
@@ -65,9 +66,12 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
                             PesquisarContas();
                             break;
                         case '6':
-                            ExportarContas();
+                            ExportarContasJSON();
                             break;
                         case '7':
+                            ExportarContasXML();
+                            break;
+                        case '8':
                             EncerrarAplicacao();
                             break;
                         default:
@@ -82,11 +86,11 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             }
         }
 
-        private void ExportarContas()
+        private void ExportarContasXML()
         {
             Console.Clear();
             Console.WriteLine("===============================");
-            Console.WriteLine("===     EXPORTAR CONTAS     ===");
+            Console.WriteLine("===   EXPORTAR CONTAS XML   ===");
             Console.WriteLine("===============================");
             Console.WriteLine("\n");
 
@@ -97,25 +101,6 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             }
             else
             {
-                /*string json = JsonConvert.SerializeObject(_listaDeContas, Newtonsoft.Json.Formatting.Indented);
-                try
-                {
-                    FileStream fs = new FileStream(@"C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\tmp\contas.json",
-                        FileMode.Create);
-                    using (StreamWriter streamwriter = new StreamWriter(fs))
-                    {
-                        streamwriter.WriteLine(json);
-                    }
-                    Console.WriteLine(@"Arquivo salvo em c:\tmp\contas.json");
-                    Console.ReadKey();
-                }
-                catch (Exception excecao)
-                {
-                    throw new ByteBankException(excecao.Message);
-                    Console.ReadKey();
-                }*/
-
-                //serialização para xml
                 try
                 {
                     FileStream fileStreamXml = new FileStream(@"C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\tmp\contas.xml", FileMode.Create);
@@ -131,6 +116,41 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
                 catch (Exception excecao)
                 {
                     Console.WriteLine("Ocorreu um erro ao exportar as contas: " + excecao.Message);
+                    Console.ReadKey();
+                }
+            }
+        }
+
+        private void ExportarContasJSON()
+        {
+            Console.Clear();
+            Console.WriteLine("===============================");
+            Console.WriteLine("===   EXPORTAR CONTAS JSON  ===");
+            Console.WriteLine("===============================");
+            Console.WriteLine("\n");
+
+            if (_listaDeContas.Count <= 0)
+            {
+                Console.WriteLine("... Não existe dados para exportação...");
+                Console.ReadKey();
+            }
+            else
+            {
+                string json = JsonConvert.SerializeObject(_listaDeContas, Newtonsoft.Json.Formatting.Indented);
+                try
+                {
+                    FileStream fs = new FileStream(@"C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\tmp\contas.json",
+                        FileMode.Create);
+                    using (StreamWriter streamwriter = new StreamWriter(fs))
+                    {
+                        streamwriter.WriteLine(json);
+                    }
+                    Console.WriteLine(@"Arquivo salvo em c:\tmp\contas.json");
+                    Console.ReadKey();
+                }
+                catch (Exception excecao)
+                {
+                    throw new ByteBankException(excecao.Message);
                     Console.ReadKey();
                 }
             }

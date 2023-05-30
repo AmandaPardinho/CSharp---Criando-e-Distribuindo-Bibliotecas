@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\AmandaMarquesPardinh\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.xmlserializer.generator\7.0.0\build\Microsoft.XmlSerializer.Generator.props" Condition="Exists('$(NuGetPackageRoot)microsoft.xmlserializer.generator\7.0.0\build\Microsoft.XmlSerializer.Generator.props')" />
+  </ImportGroup>
 </Project>

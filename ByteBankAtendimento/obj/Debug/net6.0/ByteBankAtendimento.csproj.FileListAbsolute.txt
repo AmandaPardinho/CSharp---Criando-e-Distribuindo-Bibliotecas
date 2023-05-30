@@ -16,3 +16,5 @@ C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-D
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\obj\Debug\net6.0\ByteBankAtendimento.pdb
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\obj\Debug\net6.0\ByteBankAtendimento.genruntimeconfig.cache
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\obj\Debug\net6.0\ref\ByteBankAtendimento.dll
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\dotnet-Microsoft.XmlSerializer.Generator.dll

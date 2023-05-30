@@ -1,7 +1,9 @@
 ﻿using System.Xml;
+using System.Runtime.Serialization;
+using System.Xml.Serialization;
 using ByteBankAtendimento.Exceptions;
 using ByteBankAtendimento.Modelos.Conta;
-//using Newtonsoft.Json;
+using Newtonsoft.Json;
 
 namespace bytebank_ATENDIMENTO.bytebank.Atendimento
 {
@@ -25,13 +27,14 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
                     Console.Clear();
                     Console.WriteLine("===============================");
                     Console.WriteLine("===       Atendimento       ===");
-                    Console.WriteLine("===1 - Cadastrar Conta      ===");
-                    Console.WriteLine("===2 - Listar Contas        ===");
-                    Console.WriteLine("===3 - Remover Conta        ===");
-                    Console.WriteLine("===4 - Ordenar Contas       ===");
-                    Console.WriteLine("===5 - Pesquisar Conta      ===");
-                    Console.WriteLine("===6 - Exportar Contas      ===");
-                    Console.WriteLine("===7 - Sair do Sistema      ===");
+                    Console.WriteLine("===============================");
+                    Console.WriteLine("===   1 - Cadastrar Conta   ===");
+                    Console.WriteLine("===   2 - Listar Contas     ===");
+                    Console.WriteLine("===   3 - Remover Conta     ===");
+                    Console.WriteLine("===   4 - Ordenar Contas    ===");
+                    Console.WriteLine("===   5 - Pesquisar Conta   ===");
+                    Console.WriteLine("===   6 - Exportar Contas   ===");
+                    Console.WriteLine("===   7 - Sair do Sistema   ===");
                     Console.WriteLine("===============================");
                     Console.WriteLine("\n\n");
                     Console.Write("Digite a opção desejada: ");
@@ -94,22 +97,40 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             }
             else
             {
-                //string json = JsonConvert.SerializeObject(_listaDeContas,
-                    //Formatting.Indented);
+                /*string json = JsonConvert.SerializeObject(_listaDeContas, Newtonsoft.Json.Formatting.Indented);
                 try
                 {
-                    FileStream fs = new FileStream(@"c:\tmp\export\contas.json",
+                    FileStream fs = new FileStream(@"C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\tmp\contas.json",
                         FileMode.Create);
                     using (StreamWriter streamwriter = new StreamWriter(fs))
                     {
-                        streamwriter.WriteLine(/*json*/);
+                        streamwriter.WriteLine(json);
                     }
-                    Console.WriteLine(@"Arquivo salvo em c:\tmp\export\");
+                    Console.WriteLine(@"Arquivo salvo em c:\tmp\contas.json");
                     Console.ReadKey();
                 }
                 catch (Exception excecao)
                 {
                     throw new ByteBankException(excecao.Message);
+                    Console.ReadKey();
+                }*/
+
+                //serialização para xml
+                try
+                {
+                    FileStream fileStreamXml = new FileStream(@"C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\tmp\contas.xml", FileMode.Create);
+                    using (StreamWriter streamwriter = new StreamWriter(fileStreamXml))
+                    {
+                        XmlSerializer serializador = new XmlSerializer(typeof(List<ContaCorrente>));
+
+                        serializador.Serialize(streamwriter, _listaDeContas);
+                    }
+                    Console.WriteLine(@"Arquivo salvo em c:\tmp\contas.xml");
+                    Console.ReadKey();
+                }
+                catch (Exception excecao)
+                {
+                    Console.WriteLine("Ocorreu um erro ao exportar as contas: " + excecao.Message);
                     Console.ReadKey();
                 }
             }

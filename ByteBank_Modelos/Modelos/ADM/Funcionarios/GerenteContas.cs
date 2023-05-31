@@ -17,7 +17,7 @@ namespace ByteBankAtendimento.Modelos.ADM.Funcionarios
             this.Salario *= 1.05;
         }
 
-        public override double getBonificacao()
+        protected internal override double getBonificacao()
         {
             return this.Salario * 0.25;
         }

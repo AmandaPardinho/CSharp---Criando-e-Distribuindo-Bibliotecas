@@ -1,7 +1,7 @@
 [assembly:System.Security.AllowPartiallyTrustedCallers()]
 [assembly:System.Security.SecurityTransparent()]
 [assembly:System.Security.SecurityRules(System.Security.SecurityRuleSet.Level1)]
-[assembly:System.Xml.Serialization.XmlSerializerVersionAttribute(ParentAssemblyId=@"3ada30df-c3db-4bcb-8397-4564a5e46906,", Version=@"1.0.0.0")]
+[assembly:System.Xml.Serialization.XmlSerializerVersionAttribute(ParentAssemblyId=@"503b941e-b5dd-476c-a952-51a3e920f780,", Version=@"1.0.0.0")]
 namespace Microsoft.Xml.Serialization.GeneratedAssembly {
 
     public class XmlSerializationWriterByteBank_Atendimento : System.Xml.Serialization.XmlSerializationWriter {
@@ -101,12 +101,12 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         protected override void InitCallbacks() {
         }
 
-        string id2_Item;
         string id1_ByteBank_Atendimento;
+        string id2_Item;
 
         protected override void InitIDs() {
-            id2_Item = Reader.NameTable.Add(@"");
             id1_ByteBank_Atendimento = Reader.NameTable.Add(@"ByteBank_Atendimento");
+            id2_Item = Reader.NameTable.Add(@"");
         }
     }
 

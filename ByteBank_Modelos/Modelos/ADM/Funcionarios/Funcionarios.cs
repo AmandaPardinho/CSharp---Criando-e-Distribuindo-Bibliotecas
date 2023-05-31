@@ -25,6 +25,6 @@ namespace ByteBankAtendimento.Modelos.ADM.Funcionarios
         }
 
         public abstract void AumentarSalario();
-        public abstract double getBonificacao();
+        protected internal abstract double getBonificacao();
     }
 }

@@ -1,10 +1,11 @@
 ﻿using bytebank_ATENDIMENTO.bytebank.Atendimento;
 using ByteBankAtendimento.Modelos.ADM.Funcionarios;
 using ByteBankGeradorChavePix;
+using ByteBankOutrosFormatos;
 
 Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
 
-//new ByteBank_Atendimento().AtendimentoCliente();
+new ByteBank_Atendimento().AtendimentoCliente();
 
 /*public class Estagiario : Funcionario
 {
@@ -23,7 +24,7 @@ Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
     }
 }*/
 
-    Console.WriteLine(GeradorPix.GetChavePix());
+    //Console.WriteLine(GeradorPix.GetChavePix());
 
 var listaChaves = GeradorPix.GetChavesPix(10);
 foreach (var chave in listaChaves)

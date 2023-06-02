@@ -4,6 +4,10 @@ using System.Xml.Serialization;
 using ByteBankAtendimento.Exceptions;
 using ByteBankAtendimento.Modelos.Conta;
 using Newtonsoft.Json;
+using ByteBankOutrosFormatos;
+using System.Collections.Generic;
+using System.Collections;
+using bytebank_ATENDIMENTO.bytebank.Util;
 
 namespace bytebank_ATENDIMENTO.bytebank.Atendimento
 {
@@ -66,10 +70,10 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
                             PesquisarContas();
                             break;
                         case '6':
-                            ExportarContasJSON();
+                            ExportarContasJSON(_listaDeContas);
                             break;
                         case '7':
-                            ExportarContasXML();
+                            ExportarContasXML(_listaDeContas);
                             break;
                         case '8':
                             EncerrarAplicacao();
@@ -86,7 +90,7 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             }
         }
 
-        private void ExportarContasXML()
+        private void ExportarContasXML(List<ContaCorrente> contas)
         {
             Console.Clear();
             Console.WriteLine("===============================");
@@ -94,34 +98,15 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             Console.WriteLine("===============================");
             Console.WriteLine("\n");
 
-            if (_listaDeContas.Count <= 0)
-            {
-                Console.WriteLine("... Não existe dados para exportação...");
-                Console.ReadKey();
-            }
-            else
-            {
-                try
-                {
-                    FileStream fileStreamXml = new FileStream(@"C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\tmp\contas.xml", FileMode.Create);
-                    using (StreamWriter streamwriter = new StreamWriter(fileStreamXml))
-                    {
-                        XmlSerializer serializador = new XmlSerializer(typeof(List<ContaCorrente>));
-
-                        serializador.Serialize(streamwriter, _listaDeContas);
-                    }
-                    Console.WriteLine(@"Arquivo salvo em c:\tmp\contas.xml");
-                    Console.ReadKey();
-                }
-                catch (Exception excecao)
-                {
-                    Console.WriteLine("Ocorreu um erro ao exportar as contas: " + excecao.Message);
-                    Console.ReadKey();
-                }
-            }
+            /*new ContaCorrente(95, "123456-X") { Saldo = 100, Titular = new Cliente { Cpf = "11111", Nome = "Henrique" } },
+              new ContaCorrente(95, "951258-X") { Saldo = 200, Titular = new Cliente { Cpf = "22222", Nome = "Pedro" } },
+              new ContaCorrente(94, "987321-W") { Saldo = 60, Titular = new Cliente { Cpf = "33333", Nome = "Marisa" } }*/
+            //this._listaDeContas = contas;
+            //Array lista =  contas.ToArray();
+            Xml<ContaCorrente>.CriaXML(contas);
         }
 
-        private void ExportarContasJSON()
+        private void ExportarContasJSON(List<ContaCorrente> contas)
         {
             Console.Clear();
             Console.WriteLine("===============================");
@@ -129,31 +114,9 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             Console.WriteLine("===============================");
             Console.WriteLine("\n");
 
-            if (_listaDeContas.Count <= 0)
-            {
-                Console.WriteLine("... Não existe dados para exportação...");
-                Console.ReadKey();
-            }
-            else
-            {
-                string json = JsonConvert.SerializeObject(_listaDeContas, Newtonsoft.Json.Formatting.Indented);
-                try
-                {
-                    FileStream fs = new FileStream(@"C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\tmp\contas.json",
-                        FileMode.Create);
-                    using (StreamWriter streamwriter = new StreamWriter(fs))
-                    {
-                        streamwriter.WriteLine(json);
-                    }
-                    Console.WriteLine(@"Arquivo salvo em c:\tmp\contas.json");
-                    Console.ReadKey();
-                }
-                catch (Exception excecao)
-                {
-                    throw new ByteBankException(excecao.Message);
-                    Console.ReadKey();
-                }
-            }
+            //this._listaDeContas = contas;
+            //Array lista = contas.ToArray();
+            Json<ContaCorrente>.CriaJSON(contas.ToArray());        
         }
 
         private void EncerrarAplicacao()

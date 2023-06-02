@@ -11,7 +11,9 @@
           "ByteBank_Modelos": "1.0.0",
           "Microsoft.XmlSerializer.Generator": "7.0.0",
           "Newtonsoft.Json": "13.0.3",
-          "System.Xml.XmlSerializer": "4.3.0"
+          "System.Xml.XmlSerializer": "4.3.0",
+          "ByteBankGeradorChavePix": "1.0.0.0",
+          "ByteBankOutrosFormatos": "1.0.0.0"
         },
         "runtime": {
           "ByteBankAtendimento.dll": {}
@@ -274,6 +276,22 @@
         "runtime": {
           "ByteBank_Modelos.dll": {}
         }
+      },
+      "ByteBankGeradorChavePix/1.0.0.0": {
+        "runtime": {
+          "ByteBankGeradorChavePix.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ByteBankOutrosFormatos/1.0.0.0": {
+        "runtime": {
+          "ByteBankOutrosFormatos.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -502,6 +520,16 @@
     },
     "ByteBank_Modelos/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ByteBankGeradorChavePix/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ByteBankOutrosFormatos/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

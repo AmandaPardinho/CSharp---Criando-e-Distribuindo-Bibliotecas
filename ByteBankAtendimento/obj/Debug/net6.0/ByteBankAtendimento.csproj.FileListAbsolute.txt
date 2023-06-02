@@ -18,3 +18,7 @@ C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-D
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\obj\Debug\net6.0\ref\ByteBankAtendimento.dll
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\dotnet-Microsoft.XmlSerializer.Generator.dll
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\ByteBankGeradorChavePix.dll
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\ByteBankGeradorChavePix.pdb
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\ByteBankOutrosFormatos.dll
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\ByteBankOutrosFormatos.pdb

@@ -17,4 +17,16 @@
     <ProjectReference Include="..\ByteBank_Modelos\ByteBank_Modelos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="ByteBankGeradorChavePix">
+      <HintPath>..\..\..\dll_csharp\ByteBankGeradorChavePix\bin\Debug\net6.0\ByteBankGeradorChavePix.dll</HintPath>
+    </Reference>
+    <Reference Include="ByteBankOutrosFormatos">
+      <HintPath>..\..\..\dll_csharp\ByteBankOutrosFormatos\bin\Debug\net6.0\ByteBankOutrosFormatos.dll</HintPath>
+    </Reference>
+    <Reference Include="OutrosFormatos">
+      <HintPath>..\..\..\dll_csharp\OutrosFormatos\bin\Debug\net6.0\OutrosFormatos.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

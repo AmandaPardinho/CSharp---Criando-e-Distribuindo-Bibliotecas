@@ -24,7 +24,7 @@ new ByteBank_Atendimento().AtendimentoCliente();
     }
 }*/
 
-    //Console.WriteLine(GeradorPix.GetChavePix());
+Console.WriteLine(GeradorPix.GetChavePix());
 
 var listaChaves = GeradorPix.GetChavesPix(10);
 foreach (var chave in listaChaves)

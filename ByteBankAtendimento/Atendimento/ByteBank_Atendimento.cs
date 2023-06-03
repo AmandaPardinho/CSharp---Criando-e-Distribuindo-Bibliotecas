@@ -98,11 +98,6 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             Console.WriteLine("===============================");
             Console.WriteLine("\n");
 
-            /*new ContaCorrente(95, "123456-X") { Saldo = 100, Titular = new Cliente { Cpf = "11111", Nome = "Henrique" } },
-              new ContaCorrente(95, "951258-X") { Saldo = 200, Titular = new Cliente { Cpf = "22222", Nome = "Pedro" } },
-              new ContaCorrente(94, "987321-W") { Saldo = 60, Titular = new Cliente { Cpf = "33333", Nome = "Marisa" } }*/
-            //this._listaDeContas = contas;
-            //Array lista =  contas.ToArray();
             Xml<ContaCorrente>.CriaXML(contas);
         }
 
@@ -114,8 +109,6 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             Console.WriteLine("===============================");
             Console.WriteLine("\n");
 
-            //this._listaDeContas = contas;
-            //Array lista = contas.ToArray();
             Json<ContaCorrente>.CriaJSON(contas.ToArray());        
         }
 

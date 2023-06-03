@@ -22,3 +22,4 @@ C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-D
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\ByteBankGeradorChavePix.pdb
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\ByteBankOutrosFormatos.dll
 C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\ByteBankOutrosFormatos.pdb
+C:\Users\AmandaMarquesPardinh\Desktop\Performa\repositorios\CSharp---Criando-e-Distribuindo-Bibliotecas\ByteBankAtendimento\bin\Debug\net6.0\ByteBankGeradorChavePix.xml
